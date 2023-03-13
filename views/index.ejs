@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>書籍管理アプリ</title>
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <p>書籍管理アプリ</p>
+                    <a class="top-btn" href="/index">myBOOKSHELF</a>
+                </div>
+                <div class="header-right">
+                    <a class="login" href="#">ログイン</a>
+                </div>  
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="container-header">
+                    <h1>本棚</h1>
+                    <a class="bookEdit-btn" href="/bookEdit">編集</a>
+                    <form class="order-btn" action="/titleOrder" method="post">
+                        <input type="submit" value="タイトル順">
+                    </form>
+                    <form class="order-btn" action="/authorOrder" method="post">
+                        <input type="submit" value="著者順">
+                    </form>
+                    <form class="order-btn" action="/addOrder" method="post">
+                        <input type="submit" value="追加順">
+                    </form>
+                   
+                </div>
+
+                    <ul class="table-body">
+                        <% books.forEach((book) => { %>
+                            <li>
+                                <div class="book-data">
+                                    <span class="book-title"><%= book.title %></span>
+                                    <span class="book-author"><%= book.author %></span>
+                                </div>
+                                
+                            </li>
+                        
+
+                    </ul>    
+                   
+                        <% }) %>
+
+                
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

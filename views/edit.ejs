@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>編集</title>
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <p>書籍管理アプリ</p>
+                    <a class="top-btn" href="/index">myBOOKSHELF</a>
+                </div>
+                <div class="header-right">
+                    <a class="login" href="#">ログイン</a>
+                </div>  
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="container-header">
+                    <h1>編集</h1>
+                    <a href="/bookEdit" class="cancel-btn">戻る</a>
+                </div>
+                <div class="book-form-wrapper">
+                    <div class="book-form-container">
+                       
+                        <form action="/update/<%= book.id %>" method="post">
+                            <%= console.log(book.id) %>
+                            <p>タイトル</p>
+                            <input type="text" name="bookTitle"value="<%= book.title %>">
+                            <p>著者</p>
+                            <input type="text" name="bookAuthor" value="<%= book.author %>">
+                            <input type="submit" value="更新">
+                        </form>
+    
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+ 
+        
+        <footer>
+
+        </footer>
+   </body>
+</html>

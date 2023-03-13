@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+/*ここからヘッダー*/
+header {
+    background-color:rgb(68, 57, 51);
+    height: 90px;
+}
+.header-container {
+    margin:0px  20px;
+    padding:10px 0px;
+    color: white;
+}
+header p {
+    font-size: 15px;
+    
+}
+
+.top-btn {
+    font-size: 35px;
+    color:white;
+    font-weight:bold;
+}
+
+.header-left {
+    float: left;
+}
+
+.login {
+    color:white;
+    display: block;
+    font-size: 20px;
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.header-right:hover {
+    opacity: 0.7;
+}
+/*ここまで*/
+
+.main {
+    background-color:white;
+    height:fit-content;
+    margin: 30px 50px;
+}
+
+.clear {
+    clear: left;
+}
+
+.container-header {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.container-header h1 {
+    color: rgb(68, 57, 51);
+    display:inline;
+    text-align: center;
+}
+/*本棚画面に遷移するボタン*/
+.index-btn {
+    float:right;
+    color:rgb(68, 57, 51);
+}
+/*本棚編集ボタン*/
+.bookEdit-btn {
+    float:right;
+    color:rgb(68, 57, 51);
+    margin-left:10px
+}
+/* 削除ボタン */
+.delete-btn {
+    color:rgb(68, 57, 51);
+    font-size: 10px;
+}
+/*編集ボタン*/
+.edit-btn {
+    writing-mode:horizontal-tb;
+}
+
+/*編集終了ボタン*/
+.cancel-btn {
+    float:right;
+    color:rgb(68, 57, 51);
+}
+/*並び替えボタン*/
+.order-btn {
+    float:right;
+    margin: 0 1px;
+}
+
+.book-data {
+    writing-mode: vertical-rl;
+    float:left;
+    border: solid rgb(68, 57, 51);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+}
+.book-title {
+    height:200px;
+    /* 以下、タイトル文字数が枠内を超えたときに省略するコード */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*ここまで*/
+}
+.book-author {
+    height: 100px;
+    text-align: end;
+}
+.book-menu {
+    display:flex;
+    font-size: 10px;
+}
+/*追加ボタン*/
+.new-btn {
+    writing-mode: vertical-rl;
+    background-color: rgb(93, 88, 82);
+    padding:20px 10px;
+    border-radius: 10px;
+    color: white;
+    margin:5px;
+}
+
+
+/* フォームのレイアウト*/
+.book-form-container {
+    font-size: 20px;
+}
+
+.book-form-wrapper {
+    width:fit-content;
+    margin:0 auto;
+    padding:30px 0;
+}
+
+footer {
+    background-color:rgb(68, 57, 51);
+    height: 100px;
+}
